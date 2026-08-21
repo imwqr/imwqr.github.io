@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>冬天Blog</title>
-    <link>https://imwqr.github.io/</link>
+    <link>https://imwqr.cn/</link>
     <description>冬天来了，幸福还会远吗？</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, imwqr</copyright>
     <lastBuildDate>Thu, 20 Aug 2026 02:00:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
-    <atom:link href="https://imwqr.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://imwqr.cn/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>你好，这里是冬天Blog</title>
-      <link>https://imwqr.github.io/2026/08/20/welcome-to-winter-blog/</link>
+      <link>https://imwqr.cn/2026/08/20/welcome-to-winter-blog/</link>
       <description>欢迎来到冬天Blog，这里记录技术实践、实用资源和生活中的片刻思考。</description>
       <author>imwqr</author>
-      <category domain="https://imwqr.github.io/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/">建站记录</category>
-      <category domain="https://imwqr.github.io/tags/Hexo/">Hexo</category>
-      <category domain="https://imwqr.github.io/tags/NexT/">NexT</category>
-      <category domain="https://imwqr.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</category>
+      <category domain="https://imwqr.cn/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/">建站记录</category>
+      <category domain="https://imwqr.cn/tags/Hexo/">Hexo</category>
+      <category domain="https://imwqr.cn/tags/NexT/">NexT</category>
+      <category domain="https://imwqr.cn/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</category>
       <pubDate>Thu, 20 Aug 2026 02:00:00 GMT</pubDate>
       <content:encoded>
         <![CDATA[<p>你好，欢迎来到 <strong>冬天Blog</strong>。</p><p>这里是我整理技术实践、收藏实用资源，也记录生活片刻的个人空间。比起追求复杂的动画和装饰，我更希望这个博客保持清爽、稳定，并且真正留下值得回看的内容。</p><span id="more"></span><h2 id="为什么重新整理这个博客"><a href="#为什么重新整理这个博客" class="headerlink" title="为什么重新整理这个博客"></a>为什么重新整理这个博客</h2><p>这个网站使用 Hexo 和 NexT 搭建，并部署在 GitHub Pages。它已经具备搜索、RSS、文章统计和响应式布局等基础能力，但内容和视觉风格还需要慢慢补全。</p><p>接下来，我会从三件事开始：</p><ul><li>记录遇到的问题和解决过程；</li><li>整理真正使用过的工具与资源；</li><li>分享一些学习、生活和兴趣相关的内容。</li></ul><h2 id="这里会出现什么"><a href="#这里会出现什么" class="headerlink" title="这里会出现什么"></a>这里会出现什么</h2><p>目前计划围绕以下方向持续更新：</p><h3 id="技术与实践"><a href="#技术与实践" class="headerlink" title="技术与实践"></a>技术与实践</h3><p>记录编程、网站建设、工具配置以及解决问题的过程。文章会尽量说明背景、步骤和容易踩到的坑。</p><h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><p>整理长期使用且值得推荐的网站、软件和学习资料，并在资源发生变化时及时维护。</p><h3 id="生活与思考"><a href="#生活与思考" class="headerlink" title="生活与思考"></a>生活与思考</h3><p>偶尔写下生活中的见闻、兴趣和阶段性想法，让博客不只是一份技术备忘录。</p><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>博客不会一开始就很完整，它会随着内容一点点生长。如果这里的某篇文章恰好对你有所帮助，那就是一件很开心的事。</p><p>冬天来了，幸福还会远吗？</p>]]>
