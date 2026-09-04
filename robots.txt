@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imwqr.cn/sitemap.xml

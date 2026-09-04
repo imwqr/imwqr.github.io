@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 8.1.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"imwqr.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="这是冬天Blog的开放留言处，欢迎分享网站建议、阅读感受、学习心得和生活中的小故事。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="欢迎来这里留言">
+<meta property="og:url" content="https://imwqr.cn/2026/08/25/welcome-to-comment/index.html">
+<meta property="og:site_name" content="冬天Blog">
+<meta property="og:description" content="这是冬天Blog的开放留言处，欢迎分享网站建议、阅读感受、学习心得和生活中的小故事。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-08-25T08:30:00.000Z">
+<meta property="article:modified_time" content="2026-08-25T08:30:00.000Z">
+<meta property="article:author" content="imwqr">
+<meta property="article:tag" content="交流">
+<meta property="article:tag" content="评论">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://imwqr.cn/2026/08/25/welcome-to-comment/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+
+  
+  <meta name="keywords" content="冬天Blog, imwqr, 技术博客, Hexo, NexT, 开发笔记, 资源分享">
+  <meta property="og:image" content="https://imwqr.cn/images/og-default.jpg">
+  <meta name="twitter:image" content="https://imwqr.cn/images/og-default.jpg">
+
+  <title>欢迎来这里留言 | 冬天Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="冬天Blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">冬天Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-资源">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://imwqr.cn/2026/08/25/welcome-to-comment/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.webp">
+      <meta itemprop="name" content="imwqr">
+      <meta itemprop="description" content="冬天来了，幸福还会远吗？">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="冬天Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          欢迎来这里留言
+        </h1>
+
+        <div class="post-meta">
+        
+          <i class="fa fa-thumb-tack"></i>
+          <font color=7D26CD>置顶</font>
+          <span class="post-meta-divider">|</span>
+        
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2026-08-25 16:30:00" itemprop="dateCreated datePublished" datetime="2026-08-25T16:30:00+08:00">2026-08-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">日记</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>507</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+            <div class="post-description">这是冬天Blog的开放留言处，欢迎分享网站建议、阅读感受、学习心得和生活中的小故事。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>欢迎来到冬天Blog的留言角落。</p>
+<p>这里没有规定好的话题，也不要求写一段完整、正式的文字。关于网站、文章，或者你最近遇到的有趣事情，都可以在评论区说一说。</p>
+<span id="more"></span>
+
+<h2 id="可以聊些什么"><a href="#可以聊些什么" class="headerlink" title="可以聊些什么"></a>可以聊些什么</h2><p>如果暂时不知道从哪里开始，可以从下面这些方向随意挑一个：</p>
+<ul>
+<li>对博客排版、配色、阅读体验或功能的建议；</li>
+<li>希望以后看到的文章主题；</li>
+<li>阅读某篇文章后的想法、补充或问题；</li>
+<li>最近学到的知识、使用过的工具和实用资源；</li>
+<li>旅行见闻、生活片段、兴趣爱好或一件让你开心的小事；</li>
+<li>单纯路过，留下一句问候。</li>
+</ul>
+<p>当然，你也可以完全不参考这份清单。只要愿意分享，任何友善的内容都欢迎。</p>
+<h2 id="一起让这里慢慢变好"><a href="#一起让这里慢慢变好" class="headerlink" title="一起让这里慢慢变好"></a>一起让这里慢慢变好</h2><p>这个博客仍在持续调整。每一条真实的使用感受，都可能帮助我发现自己没有注意到的问题。无论是“这里很好用”，还是“这个地方有点别扭”，对我来说都有价值。</p>
+<p>如果你发现链接失效、文字错误、手机端显示异常或其他问题，也欢迎直接指出。对于文章里的知识内容，如果有不同理解或更好的方法，也很期待与你讨论。</p>
+<h2 id="留言前的小提醒"><a href="#留言前的小提醒" class="headerlink" title="留言前的小提醒"></a>留言前的小提醒</h2><p>希望这里可以保持轻松、友善和互相尊重。留言时请不要公开密码、手机号、详细住址等敏感信息，也请避免广告、骚扰和攻击性内容。</p>
+<p>那么，就从一句“你好”开始吧。感谢你来到这里，也期待在评论区认识你的想法。</p>
+
+    </div>
+
+    
+    
+    
+    
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/rss2.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AF%84%E8%AE%BA/" rel="tag"># 评论</a>
+              <a href="/tags/%E4%BA%A4%E6%B5%81/" rel="tag"># 交流</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2026/08/23/sql-syntax-learning/" rel="prev" title="SQL 语法学习笔记">
+      <i class="fa fa-chevron-left"></i> SQL 语法学习笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+
+  <section class="comments waline-comments" id="waline-comments" aria-labelledby="waline-comments-title">
+    <header class="waline-comments-header">
+      <h2 id="waline-comments-title">参与讨论</h2>
+      <p>欢迎留下想法，友善交流。</p>
+    </header>
+    <div id="waline"></div>
+    <p class="waline-load-error" id="waline-load-error" hidden>
+      评论区暂时无法加载，请稍后刷新页面重试。
+    </p>
+    <noscript><p class="waline-noscript">请启用 JavaScript 后查看和发表评论。</p></noscript>
+  </section>
+
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%BA%9B%E4%BB%80%E4%B9%88"><span class="nav-number">1.</span> <span class="nav-text">可以聊些什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E8%B5%B7%E8%AE%A9%E8%BF%99%E9%87%8C%E6%85%A2%E6%85%A2%E5%8F%98%E5%A5%BD"><span class="nav-number">2.</span> <span class="nav-text">一起让这里慢慢变好</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%95%99%E8%A8%80%E5%89%8D%E7%9A%84%E5%B0%8F%E6%8F%90%E9%86%92"><span class="nav-number">3.</span> <span class="nav-text">留言前的小提醒</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="imwqr"
+      src="/images/avatar.webp">
+  <p class="site-author-name" itemprop="name">imwqr</p>
+  <div class="site-description" itemprop="description">冬天来了，幸福还会远吗？</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/imwqr" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;imwqr" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:15315912704@163.com" title="E-Mail → mailto:15315912704@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/imwqr" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;imwqr" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/imwqr_571" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;imwqr_571" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">imwqr</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">14k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">12 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+
+  <!-- 保留原有 20000 初始计数偏移，使用原生 JavaScript 避免依赖 jQuery。 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var countOffset = 20000;
+      var attempts = 0;
+      var timer = setInterval(function() {
+        var completed = true;
+
+        ['site_pv', 'site_uv'].forEach(function(type) {
+          var container = document.getElementById('busuanzi_container_' + type);
+          var value = document.getElementById('busuanzi_value_' + type);
+          if (!container || !value || getComputedStyle(container).display === 'none' || !value.textContent.trim()) {
+            completed = false;
+            return;
+          }
+          if (value.dataset.offsetApplied !== 'true') {
+            var count = parseInt(value.textContent, 10);
+            if (Number.isFinite(count)) {
+              value.textContent = count + countOffset;
+              value.dataset.offsetApplied = 'true';
+            }
+          }
+        });
+
+        attempts += 1;
+        if (completed || attempts >= 400) clearInterval(timer);
+      }, 50);
+    });
+  </script>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/medium-zoom.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+  <script type="module">
+    import('https://unpkg.com/@waline/client@v3/dist/waline.js')
+      .then(({ init }) => {
+        init({
+          el: '#waline',
+          serverURL: "https://comment.imwqr.cn",
+          path: window.location.pathname.length > 1 && window.location.pathname.endsWith('/')
+            ? window.location.pathname.slice(0, -1)
+            : window.location.pathname,
+          lang: 'zh-CN',
+          meta: ['nick', 'mail', 'link'],
+          requiredMeta: ['nick', 'mail'],
+          login: 'enable',
+          pageSize: 10,
+          wordLimit: [1, 1000],
+          imageUploader: false,
+          search: false,
+          reaction: false
+        });
+      })
+      .catch(error => {
+        console.error('Waline failed to load:', error);
+        const message = document.querySelector('#waline-load-error');
+        if (message) message.hidden = false;
+      });
+  </script>
+
+  
+</body>
+</html>

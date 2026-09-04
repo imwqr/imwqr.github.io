@@ -1,0 +1,121 @@
+locale: zh_Hans
+
+backend:
+  name: github
+  repo: imwqr/blog-source
+  branch: main
+  base_url: https://admin.imwqr.cn
+  auth_endpoint: /auth
+  use_graphql: false
+  commit_messages:
+    create: "content: 新增 {{collection}}《{{slug}}》"
+    update: "content: 更新 {{collection}}《{{slug}}》"
+    delete: "content: 删除 {{collection}}《{{slug}}》"
+    uploadMedia: "media: 上传 {{path}}"
+    deleteMedia: "media: 删除 {{path}}"
+
+site_url: https://imwqr.cn
+display_url: https://imwqr.cn
+logo:
+  src: https://imwqr.cn/images/curry-dog-icon.webp
+  show_in_header: true
+publish_mode: simple
+media_folder: source/images/uploads
+public_folder: /images/uploads
+
+slug:
+  encoding: unicode
+  clean_accents: false
+  sanitize_replacement: "-"
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    description: 新建、编辑和发布冬天Blog文章。发布后会自动触发构建与上线。
+    folder: source/_posts
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date}}"
+    sortable_fields:
+      - date
+      - updated
+      - title
+    view_filters:
+      - label: 已置顶
+        field: top
+        pattern: true
+      - label: 已开启评论
+        field: comments
+        pattern: true
+    editor:
+      preview: false
+    fields:
+      - label: 标题
+        name: title
+        widget: string
+        hint: 用清晰、具体的中文标题概括文章内容。
+      - label: 发布时间
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD HH:mm:ss"
+        date_format: "YYYY-MM-DD"
+        time_format: "HH:mm:ss"
+        picker_utc: false
+      - label: 更新时间
+        name: updated
+        widget: datetime
+        format: "YYYY-MM-DD HH:mm:ss"
+        date_format: "YYYY-MM-DD"
+        time_format: "HH:mm:ss"
+        picker_utc: false
+      - label: 摘要描述
+        name: description
+        widget: text
+        hint: 建议 60～120 个汉字，用于搜索结果和社交分享描述。
+      - label: 分类
+        name: categories
+        widget: select
+        options:
+          - 旅游
+          - 生活
+          - 学习
+          - 日记
+          - 输出作品
+          - 建站记录
+      - label: 标签
+        name: tags
+        widget: list
+        allow_add: true
+        collapsed: false
+        field:
+          label: 标签
+          name: tag
+          widget: string
+        hint: 输入一个标签后继续添加，建议每篇 2～5 个。
+      - label: SEO 关键词
+        name: keywords
+        widget: list
+        required: false
+        allow_add: true
+        field:
+          label: 关键词
+          name: keyword
+          widget: string
+      - label: 置顶文章
+        name: top
+        widget: boolean
+        default: false
+        required: false
+      - label: 开启评论
+        name: comments
+        widget: boolean
+        default: true
+        required: false
+      - label: 正文
+        name: body
+        widget: markdown
+        hint: 如需控制首页摘要，可在摘要结束处单独加入 <!-- more -->。
